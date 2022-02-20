@@ -1,3 +1,4 @@
+import 'package:challenge/constants/my_colors.dart';
 import 'package:flutter/material.dart';
 
 class Events extends StatelessWidget {
@@ -6,7 +7,7 @@ class Events extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-    
+    margin: EdgeInsets.only(top:20),
       padding: EdgeInsets.symmetric(horizontal: 15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,10 +26,10 @@ children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-              Text('Sat Feb 19 . 12:00 Pm'),
+              Text('Sat Feb 19 . 12:00 Pm',style: TextStyle(color: MyColors.navigationunActive),),
               Text('Flutter Festival,',style: TextStyle(fontWeight: FontWeight.bold),),
               Text('Islamabad',style: TextStyle(fontWeight: FontWeight.bold),),
-              Text('data'),
+              Text('Flutter Islamabad'),
             ],),
             Container(
               child: Image.network('https://secure-content.meetupstatic.com/images/classic-events/501629680/676x380.webp',
